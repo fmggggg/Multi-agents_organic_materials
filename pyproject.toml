@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "organic-crystal-agent"
+version = "0.1.0"
+description = "A realization-aware agent platform skeleton for organic crystal discovery."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "langgraph>=0.2",
+  "pydantic>=2.8",
+  "rich>=13.7",
+  "typer>=0.12",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2",
+]
+csp = [
+  "average-minimum-distance",
+  "pandas<3",
+]
+openai = [
+  "openai>=1.0",
+]
+ui = [
+  "streamlit>=1.35",
+]
+
+[project.scripts]
+organic-crystal-agent = "organic_crystal_agent.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
