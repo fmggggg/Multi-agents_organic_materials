@@ -2,6 +2,12 @@
 
 `Organic Crystal Agent` is a ChemGraph-inspired platform for organic crystal discovery, CSP orchestration, packing extraction, and property evaluation.
 
+> **Projects in this repository**
+>
+> - [`projects/azapentacene_mobility`](projects/azapentacene_mobility): LLM agent loop (OpenAI or free OpenRouter models)
+>   that searches aza-substituted five-ring acenes for high predicted charge mobility, using Clari-H CSP, MACE-OFF
+>   energies and the MCRT mobility model.
+
 It is intentionally built around the parts that matter most for this project:
 
 - a typed workflow engine
