@@ -107,7 +107,8 @@ $PY -m aza_agent.plot best.png campaigns/gpt:GPT campaigns/rand:Random   # best-
 
 Other `init` options: `--goal` (free text placed in the system prompt), `--model`, `--effort`, `--z`,
 `--rank-energy {total,inter}`, `--relax-fixed-cell`, `--relax-dtype`, `--relax-workers`, `--gpu`, `--seed`.
-`scripts/` has the two batch runs used for the demo (LLM vs random, and the relaxed three-arm comparison).
+`scripts/` has the batch runs used for the demo: LLM vs random, the relaxed three-arm comparison, and
+`run_replicates.sh ARM GPU SEED...` for independent replicates (ARM = gpt | random | nemotron).
 
 ### Outputs of a campaign directory
 
