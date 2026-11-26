@@ -1,0 +1,11 @@
+# campaign outputs, data and secrets stay local
+campaigns/
+data/*
+!data/README.md
+*.zip
+*.pid
+*.log
+__pycache__/
+*.pyc
+*api_key*
+.env
